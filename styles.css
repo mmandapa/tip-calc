@@ -1,7 +1,165 @@
+/* Global reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container styling */
 .container {
   display: flex;
-  gap: 90px;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  max-width: 920px;
+  width: 100%;
+  margin: 2rem;
+  display: flex;
+  gap: 3rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+#total {
+  text-align: right;
+}
+
+/* Left container styling */
+.left {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0px;
+  border-radius: 1.5rem;
+  width: 400px;
+}
+
+/* Bill section */
+.bill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.bill p {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+}
+
+.bill input {
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 24px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+}
+
+/* Select tip section */
+.select-tip {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.select-tip p {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.buttons button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+#custom-tip {
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 24px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  width: 125px;
+}
+
+/* Number of people section */
+.num-people {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.num-people p {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+}
+
+.num-people input {
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 24px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+}
+
+/* Focus states for inputs */
+input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+input::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 1rem;
+    gap: 2rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0;
+    border-radius: 25px 25px 0 0;
+  }
 }
