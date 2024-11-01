@@ -107,17 +107,16 @@ body {
   width: 125px;
 }
 
+/* Number of people section */
 .num-people {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-
 .num-people p {
   color: hsl(186, 14%, 43%);
   font-size: 16px;
 }
-
 .num-people input {
   background-color: hsl(189, 41%, 97%);
   border: none;
@@ -128,11 +127,10 @@ body {
   color: hsl(183, 100%, 15%);
   width: 100%;
 }
-
+/* Focus states for inputs */
 input:focus {
   outline: 2px solid hsl(172, 67%, 45%);
 }
-
 input::placeholder {
   color: hsl(184, 14%, 56%);
 }
