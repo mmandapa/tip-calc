@@ -12,7 +12,6 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="font" href="https://fonts.google.com/specimen/Space+Mono" />
 
     <title>Frontend Mentor | Tip calculator app</title>
 
@@ -23,7 +22,7 @@
       <div class="left">
         <div class="bill">
           <p>Bill</p>
-          <input id="total" placeholder="0" />
+          <input id="total" />
         </div>
 
         <div class="select-tip">
@@ -35,35 +34,34 @@
             <button id="fifteen">15%</button>
             <button id="twenty-five">25%</button>
             <button id="fifty">50%</button>
-            <input id="custom-tip" placeholder="Custom" />
+            <input id="custom-tip" />
           </div>
         </div>
-        <div class="num-people">
-          <p>Number of People</p>
-          <input id="people" placeholder="0" />
+        <div class="Number of People">
+          <p>Number of people</p>
+          <input id="people" />
         </div>
       </div>
 
-      <div id="right">
-        <div class="Tip Amount">
-          <p>Tip Amount</p>
-          <p>/person</p>
-          <p>$$$$$$$$</p>
-
-          <p>Total</p>
-          <p>/person</p>
-          <p>Total%%%%%%</p>
-
-          <button id="Reset">Reset</button>
+      <div class="right">
+        <div class="display">
+          <div class="display-row">
+            <div>
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <p class="amount" id="tip-amount">$4.27</p>
+          </div>
+          <div class="display-row">
+            <div>
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <p class="amount" id="total-amount">$32.79</p>
+          </div>
         </div>
+        <button class="reset-btn" id="reset-button" disabled>Reset</button>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+     
   </body>
 </html>
