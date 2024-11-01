@@ -163,7 +163,7 @@ input::placeholder {
 }
 
 .display-row p {
-  color: hsl(185, 41%, 84%);
+  color: hsl(189, 41%, 97%);
   font-size: 16px;
   font-weight: 700;
 }
@@ -175,7 +175,7 @@ input::placeholder {
 }
 
 .display-row .amount {
-  font-size: 32px;
+  font-size: 50px;
   color: hsl(172, 67%, 45%);
   font-weight: bold;
 }
@@ -198,7 +198,7 @@ input::placeholder {
 }
 
 .reset-btn:hover {
-  background-color: hsl(172, 67%, 45%);
+  background-color: hsl(172, 76%, 75%);
   color: hsl(183, 100%, 15%);
 }
 
