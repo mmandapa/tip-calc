@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>Frontend Mentor | Tip calculator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <div class="container">
-      <div class="left">
-        <div class="bill">
-          <p>Bill</p>
-          <div class="bill-container">
-            <img src="/assets/icon-dollar.svg" alt="">
-            <input id="total" placeholder="0" />
-          </div>
-        </div>
-
-        <div class="select-tip">
-          <p>Select Tip %</p>
-
-          <div class="buttons">
-            <button id="five">5%</button>
-            <button id="ten">10%</button>
-            <button id="fifteen">15%</button>
-            <button id="twenty-five">25%</button>
-            <button id="fifty">50%</button>
-            <input id="custom-tip" placeholder="Custom"/>
-          </div>
-        </div>
-        <div class="num-people">
-          <p>Number of People</p>
-          <div class="people-container">
-            <img src="/assets/icon-person.svg" alt="">
-            <input id="people" placeholder="0"/>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="bill">
+        <p>Bill</p>
+        <div class="bill-container">
+          <img src="/assets/icon-dollar.svg" alt="">
+          <input id="bill" placeholder="0" />
         </div>
       </div>
-
-      <div class="right">
-        <div class="display">
-          <div class="display-row">
-            <div>
-              <p>Tip Amount</p>
-              <span>/ person</span>
-            </div>
-            <p class="amount" id="tip-amount">$0.00</p>
-          </div>
-          <div class="display-row">
-            <div>
-              <p>Total</p>
-              <span>/ person</span>
-            </div>
-            <p class="amount" id="total-amount">$0.00</p>
-          </div>
+      <div class="select-tip">
+        <p>Select Tip %</p>
+        <div class="buttons">
+          <button class="tip-button" value="5">5%</button>
+          <button class="tip-button" value="10">10%</button>
+          <button class="tip-button" value="15">15%</button>
+          <button class="tip-button" value="25">25%</button>
+          <button class="tip-button" value="50">50%</button>
+          <input id="custom-tip" placeholder="Custom" />
         </div>
-        <button class="reset-btn" id="reset-button" disabled>Reset</button>
+      </div>
+      <div class="num-people">
+        <p>Number of People</p>
+        <div class="people-container">
+          <img src="/assets/icon-person.svg" alt="">
+          <input id="people" placeholder="0" />
+        </div>
+      </div>
     </div>
+    <div class="right">
+      <div class="display">
+        <div class="display-row">
+          <div>
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <p class="amount" id="tip-amount">$0.00</p>
+        </div>
+        <div class="display-row">
+          <div>
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <p class="amount" id="total-amount">$0.00</p>
+        </div>
+      </div>
+      <button class="reset-btn" id="reset" disabled>Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
